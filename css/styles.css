@@ -90,6 +90,7 @@ img {
 .header-navigation {
   display: flex;
   align-items: center;
+  padding: 0;
 }
 
 .header-list .header-item:last-child {
@@ -123,6 +124,11 @@ img {
   text-decoration: none;
 }
 
+.list {
+  text-decoration: none;
+  padding: 0;
+}
+
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -138,9 +144,11 @@ img {
 /* контакты */
 
 .mail-logo {
-  width: 12px;
-  height: 16px;
-  align-items: center;
+  margin-right: 10px;
+}
+
+.tele-logo {
+  margin-right: 10px;
 }
 
 .header-contacts {
@@ -162,6 +170,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  display: flex;
+  align-items: center;
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -171,10 +181,18 @@ img {
 /* hero */
 .hero {
   background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../svgimg/hero.jpg);
   text-align: center;
   flex-grow: 1;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -226,6 +244,15 @@ img {
 
 .container-features {
   padding-bottom: 0;
+}
+
+.feature-logo {
+  background: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  padding: 25px 100px;
+  margin-bottom: 30px;
 }
 
 .features {
@@ -316,6 +343,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-bottom: 16px;
 }
 
 .team-list {
@@ -323,11 +351,32 @@ img {
   flex-wrap: wrap;
 }
 .team-list .link {
-  display: block;
+  /* display: block; */
   flex-direction: row;
 }
 .team-list .link:not(:last-child) {
   margin-right: 30px;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: center;
+}
+.socials-items {
+  border-radius: 50%;
+}
+.socials-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials-link {
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: teal;
 }
 
 /* футер */
