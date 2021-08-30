@@ -199,6 +199,11 @@ img {
 }
 
 .hero-title {
+  width: 700px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -234,6 +239,35 @@ img {
 }
 
 /* особенности */
+.feature-list .feature-logo::before {
+  content: "";
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.feature-logo.icon-antenna::before {
+  background-image: url(../svgimg/antenna.svg);
+}
+
+.feature-logo.icon-clock::before {
+  background-image: url(../svgimg/clock.svg);
+}
+
+.feature-logo.icon-diagram::before {
+  background-image: url(../svgimg/diagram.svg);
+}
+
+.feature-logo.icon-astronaut::before {
+  background-image: url(../svgimg/astronaut.svg);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -247,15 +281,6 @@ img {
 
 .container-features {
   padding-bottom: 0;
-}
-
-.feature-logo {
-  background: #f5f4fa;
-  width: 270px;
-  height: 120px;
-  display: flex;
-  padding: 25px 100px;
-  margin-bottom: 30px;
 }
 
 .features {
@@ -278,7 +303,7 @@ img {
   width: 270px;
 }
 
-.feature-list .item:not(:last-child) {
+.feature-list .feature-logo:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -423,7 +448,7 @@ img {
 
 .clients-icon-link {
   display: flex;
-  padding: 32px;
+  padding: 16px 32px;
 }
 .clients-item:hover,
 .clients-item:focus {
