@@ -240,8 +240,7 @@ img {
 /* особенности */
 .feature-list .feature-logo::before {
   content: "";
-  display: flex;
-  width: 270px;
+  display: block;
   height: 120px;
   background-color: #f5f4fa;
   background-repeat: no-repeat;
@@ -454,10 +453,11 @@ img {
   border-color: var(--accent-color);
 }
 
-.clients-item:hover .clients-icon-logo,
-.clients-item:focus .clients-icon-logo {
+.clients-icon-link:hover .clients-icon-logo,
+.clients-icon-link:focus .clients-icon-logo {
   fill: var(--accent-color);
 }
+
 .clients-icon-logo {
   fill: #afb1b8;
 }
